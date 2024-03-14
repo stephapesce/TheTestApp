@@ -1,21 +1,20 @@
 import React from 'react';
 import './App.css';
 import teamData from './CollegeBasketballTeams.json';
-// Define the TypeScript interface for the team
+// Define the TypeScript
 interface Team {
   school: string;
-  name: string; // Assuming this is the mascot's name
+  name: string;
   city: string;
   state: string;
-  // Include any other properties you need from the team object
 }
 
-// Component #1: Heading
+// Requiremnt #1: Heading
 function Header() {
   return <h1>Welcome to the NCAA Basketball Team List</h1>;
 }
 
-// Component #2: TeamCard
+// Requiremnt #2: TeamCard
 function TeamCard({ team }: { team: Team }) {
   return (
     <div className="team-card">
@@ -28,7 +27,7 @@ function TeamCard({ team }: { team: Team }) {
   );
 }
 
-// Component #3: List of TeamCards
+// Requiremnt #3: List of TeamCards
 function TeamList() {
   return (
     <div className="team-list">
@@ -39,7 +38,7 @@ function TeamList() {
   );
 }
 
-// The main App component that uses the above components
+// The main App
 function App() {
   return (
     <div className="App">
